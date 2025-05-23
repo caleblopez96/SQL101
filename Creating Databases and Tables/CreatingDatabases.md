@@ -9,10 +9,10 @@ Therefore, when creating databases, I'll be using the snake case naming conventi
 ### Query
 
 ```sql
-CREATE database <name>
+CREATE database <databaseName>
 ```
 
-Replace < name > with the name of your database
+Replace < databaseName > with the name of your database
 
 #### EXAMPLE:
 
