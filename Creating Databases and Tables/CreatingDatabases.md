@@ -2,24 +2,31 @@
 
 It's important to remember that although SQL allows you to name databases with a space, it can cause issues while querying it.
 
-Therefore, when creating databases, I'll be using the snake case naming convention.
+Therefore, when creating databases, use snake case naming convention.
 
 ## To create a database run the following query:
 
-### Query
+### Query:
 
 ```sql
-CREATE database <databaseName>
+CREATE DATABASE <databaseName>
 ```
 
 Replace < databaseName > with the name of your database
 
-#### EXAMPLE:
+### Example:
 
 ```sql
-CREATE database soap_store;
+CREATE DATABASE soap_store;
 ```
 
 ```sql
-CREATE database dog_walking_app;
+CREATE DATABASE dog_walking_app;
 ```
+
+---
+
+#### REFERENCE:
+
+Colt Steele:
+https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/learn/lecture/34412586#overview
