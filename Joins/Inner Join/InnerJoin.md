@@ -8,6 +8,15 @@ If there’s no match, the row is excluded from the results.
 
 ---
 
+## Syntax:
+
+```sql
+SELECT a.column1, b.column2
+FROM tableA a
+INNER JOIN tableB b
+ON a.id = b.id;
+```
+
 ## How it works:
 
 - The left table is the one before the LEFT JOIN keyword — here, CUSTOMERS.
@@ -52,20 +61,21 @@ If there’s no match, the row is excluded from the results.
 ## INNER JOIN Query:
 
 ```sql
-SELECT c.first_name, c.last_name, o.amount
+SELECT c.first_name, c.last_name, o.amount, o.order_date
 FROM CUSTOMERS c
 INNER JOIN ORDERS o
-ON c.customer_id = o.customer_id;
+ON c.id = o.customer_id;
 ```
 
 ## Result Table
 
-| first_name | last_name | amount |
-| ---------- | --------- | ------ |
-| Boy        | George    | 99.99  |
-| Boy        | George    | 35.50  |
-| George     | Michael   | 800.67 |
-| George     | Michael   | 12.50  |
+| first_name | last_name | amount | order_date |
+| ---------- | --------- | ------ | ---------- |
+| Boy        | George    | 99.99  | 2016-02-10 |
+| Boy        | George    | 35.50  | 2017-11-11 |
+| George     | Michael   | 800.67 | 2014-12-12 |
+| George     | Michael   | 12.50  | 2015-01-03 |
+| Bette      | Davis     | 459.25 | 1999-04-11 |
 
 ---
 

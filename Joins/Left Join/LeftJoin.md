@@ -50,7 +50,7 @@ If there is no match, the result will contain `NULL` for columns from the right 
 SELECT c.first_name, c.last_name, o.amount
 FROM CUSTOMERS c
 LEFT JOIN ORDERS o
-ON c.customer_id = o.customer_id;
+ON c.id = o.customer_id;
 ```
 
 ## Result Table
