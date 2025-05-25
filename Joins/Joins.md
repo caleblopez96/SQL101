@@ -2,6 +2,12 @@
 
 In relational databases, **JOIN** operations combine rows from two or more tables based on related columns. They allow you to query related data efficiently.
 
+When referecing positional joins like left join and right join:
+
+Left = the table written before the JOIN keyword
+
+Right = the table written after the JOIN keyword
+
 ---
 
 ## Common Types of JOINs
@@ -16,6 +22,7 @@ In relational databases, **JOIN** operations combine rows from two or more table
 
 ### 2. LEFT JOIN (or LEFT OUTER JOIN)
 
+- A **LEFT JOIN** returns **all records from the left table**, and the matched records from the right table.
 - Returns all rows from the **left** table, and the matching rows from the right table.
 - If there is no match, the result will contain NULLs for columns from the right table.
 - Useful to find all records from the left table regardless of matching entries in the right table.
@@ -24,6 +31,7 @@ In relational databases, **JOIN** operations combine rows from two or more table
 
 ### 3. RIGHT JOIN (or RIGHT OUTER JOIN)
 
+- A **RIGHT JOIN** returns **all records from the right table**, and the matched records from the left table.
 - Returns all rows from the **right** table, and the matching rows from the left table.
 - If no match exists, NULLs fill in columns from the left table.
 - Less commonly used but helpful when the right table is the primary focus.

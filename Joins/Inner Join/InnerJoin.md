@@ -4,6 +4,8 @@
 
 An **INNER JOIN** returns records with **matching values in both tables**.
 
+The overlap of two tables.
+
 If there’s no match, the row is excluded from the results.
 
 ---
