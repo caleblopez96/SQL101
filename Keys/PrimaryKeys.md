@@ -15,9 +15,11 @@ A **Primary Key** is a column (or combination of columns) that **uniquely identi
 ## 📌 Example:
 
 ```sql
-CREATE TABLE Employees (
-  EmployeeID INT PRIMARY KEY,
-  FirstName VARCHAR(50),
-  LastName VARCHAR(50)
+-- customer_id is the Primary Key that uniquely identifies each row in the customers table.
+
+CREATE TABLE customers (
+  id INT PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50)
 );
 ```

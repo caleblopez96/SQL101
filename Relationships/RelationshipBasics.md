@@ -56,14 +56,14 @@ We want to store:
 
 **Customers Table:**
 
-| customer_id | first_name | last_name | email            |
-| ----------- | ---------- | --------- | ---------------- |
-| 1           | Boy        | George    | george@gmail.com |
-| 2           | George     | Michael   | gm@gmail.com     |
-| 3           | David      | Bowie     | david@gmail.com  |
-| 4           | Blue       | Steele    | blue@gmail.com   |
+| id  | first_name | last_name | email            |
+| --- | ---------- | --------- | ---------------- |
+| 1   | Boy        | George    | george@gmail.com |
+| 2   | George     | Michael   | gm@gmail.com     |
+| 3   | David      | Bowie     | david@gmail.com  |
+| 4   | Blue       | Steele    | blue@gmail.com   |
 
-- Primary Key: `customer_id`
+Primary Key: `customer_id`
 
 **Orders Table:**
 
@@ -74,8 +74,9 @@ We want to store:
 | 3        | 2014-12-12 | 800.67 | 2           |
 | 4        | 2015-01-03 | 12.50  | 2           |
 
-- Primary Key: `order_id`
-- Foreign Key: `customer_id` references `CUSTOMERS.customer_id`
+Primary Key: `order_id`
+
+Foreign Key: `customer_id` references `customers.id`
 
 ---
 

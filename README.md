@@ -95,7 +95,31 @@ FROM orders
 GROUP BY customer_id;
 ```
 
-## Common Examples with Our Tables
+## Common Examples:
+
+**Customers Table:**
+
+| id  | first_name | last_name | email            |
+| --- | ---------- | --------- | ---------------- |
+| 1   | Boy        | George    | george@gmail.com |
+| 2   | George     | Michael   | gm@gmail.com     |
+| 3   | David      | Bowie     | david@gmail.com  |
+| 4   | Blue       | Steele    | blue@gmail.com   |
+
+Primary Key: `id`
+
+**Orders Table:**
+
+| order_id | order_date | amount | customer_id |
+| -------- | ---------- | ------ | ----------- |
+| 1        | 2016-02-10 | 99.99  | 1           |
+| 2        | 2017-11-17 | 35.50  | 1           |
+| 3        | 2014-12-12 | 800.67 | 2           |
+| 4        | 2015-01-03 | 12.50  | 2           |
+
+Primary Key: `order_id`
+
+Foreign Key: `customer_id` references `customers.id`
 
 ### Get customer names with their order amounts
 

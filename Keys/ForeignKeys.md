@@ -19,11 +19,10 @@ CREATE DATABASE shop;
 
 USE shop;
 
-CREATE table customers(
-	id INT PRIMARY KEY auto_increment,
-	first_name varchar(50),
-	last_name varchar(50),
-	email varchar(50)
+CREATE TABLE customers (
+  id INT PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50)
 );
 
 CREATE table orders(
