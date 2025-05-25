@@ -54,7 +54,7 @@ DELETE FROM {table_name} WHERE {condition};
 
 ```sql
 -- INSERT
-INSERT INTO customers (first_name, last_name) VALUES ('John', 'Doe');
+INSERT INTO customers (first_name, last_name, email) VALUES ('John', 'Doe', 'jd@gmail.com');
 
 -- UPDATE
 UPDATE customers SET email = 'new@email.com' WHERE id = 1;
