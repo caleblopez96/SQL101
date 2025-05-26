@@ -1,4 +1,4 @@
-# 📚 Dapper Cheat Sheet
+# Dapper Cheat Sheet
 
 Dapper is a lightweight ORM for .NET that maps SQL query results directly to C# objects.
 
