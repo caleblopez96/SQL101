@@ -252,3 +252,16 @@ WHERE o.amount > 100;
 - Always specify which table a column comes from in joins: `customers.id`
 - Start simple and build up complex queries step by step
 - Use `TOP` when testing to avoid huge result sets
+
+### MISC:
+
+```sql
+SELECT [TABLE_1_ALIAS].[COLUMN_1],
+       [TABLE_1_ALIAS].[COLUMN_2],
+       [TABLE_2_ALIAS].[COLUMN_3],
+       [TABLE_2_ALIAS].[COLUMN_4]
+FROM [TABLE_1_NAME] [TABLE_1_ALIAS]
+INNER JOIN [TABLE_2_NAME] [TABLE_2_ALIAS]
+ON [TABLE_1_ALIAS].[LINKING_COLUMN_1] = [TABLE_2_ALIAS].[LINKING_COLUMN_2];
+WHERE [ALIAS.CRD] = CRD
+```
